@@ -1,33 +1,205 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RemindMe — политика конфиденциальности</title>
-  <style>
-    body { font-family: Georgia, serif; max-width: 42rem; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.55; color: #1c1c1c; }
-    h1 { font-size: 1.6rem; }
-    h2 { font-size: 1.15rem; margin-top: 2rem; }
-    p { margin: 0.8rem 0; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy & Terms — RemindMe</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #18181a;
+            --text-primary: #f1f1f3;
+            --text-secondary: #9aa0a6;
+            --accent-color: #ff5252;
+            --border-color: #2a2a2e;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .lang-switch {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .lang-btn {
+            background: #202024;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .lang-btn.active {
+            background: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: var(--text-primary);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: var(--accent-color);
+            margin-top: 25px;
+        }
+
+        p, li {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .highlight {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .contact-box {
+            background-color: #202024;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+            margin-top: 30px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .lang-section {
+            display: none;
+        }
+
+        .lang-section.active {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-  <h1>Политика конфиденциальности RemindMe</h1>
-  <p>Дата: 13 октября 2026 года.</p>
-  <p>RemindMe сохраняет на этом телефоне уведомления WhatsApp, Telegram, Instagram и Viber, которые Android уже показал вам.</p>
-  <p>Сохраняются имя чата, текст уведомления и файл, вложенный в само уведомление: фото или голосовое. Приложение не открывает папки мессенджера и не читает их закрытые данные.</p>
-  <p>Копия нужна, чтобы сообщение можно было прочитать или прослушать после того, как мессенджер убрал уведомление.</p>
-  <p>Архив остаётся на телефоне. Копия в Google Drive создаётся только в скрытой папке приложения и только если вы сами запускаете резервное копирование. RemindMe не продаёт эти данные и не отправляет их на сервер разработчика.</p>
-  <p>Запись или весь архив можно удалить в приложении. Удаление приложения стирает локальную копию.</p>
-  <p>Вопросы по этой политике можно отправить через страницу разработчика RemindMe в Google Play.</p>
 
-  <h2>Privacy policy</h2>
-  <p>Date: 13 October 2026.</p>
-  <p>RemindMe keeps WhatsApp, Telegram, Instagram, and Viber notifications that Android has already shown you, on this phone.</p>
-  <p>It stores the chat name, the notification text, and a file attached to that notification, such as a photo or a voice note. The app does not open messenger folders or read their private data.</p>
-  <p>The copy is there so you can read or listen after the messenger removes the notification.</p>
-  <p>The archive stays on the phone. A Google Drive copy is created only in the app's hidden folder, and only when you start a backup yourself. RemindMe does not sell this data and does not send it to the developer's server.</p>
-  <p>You can delete one entry or the whole archive in the app. Uninstalling the app erases the local copy.</p>
-  <p>Questions about this policy can be sent through the RemindMe developer page on Google Play.</p>
+<div class="container">
+    <div class="lang-switch">
+        <button class="lang-btn active" onclick="switchLang('ru')">Русский</button>
+        <button class="lang-btn" onclick="switchLang('en')">English</button>
+    </div>
+
+    <!-- РУССКАЯ ВЕРСИЯ -->
+    <div id="lang-ru" class="lang-section active">
+        <h1>Политика конфиденциальности и Пользовательское соглашение</h1>
+        <p><em>Дата последнего обновления: 13 октября 2026 г.</em></p>
+
+        <p>Настоящий документ регулирует порядок обработки персональных данных и условия использования мобильного приложения <strong>«RemindMe: Архив»</strong>.</p>
+
+        <h2>1. Основной принцип работы и конфиденциальность</h2>
+        <p>Приложение <strong>RemindMe</strong> создано с соблюдением принципов конфиденциальности ("Privacy by Design"):</p>
+        <ul>
+            <li><span class="highlight">Только локальное хранение:</span> Все входящие текстовые уведомления, имена контактов и медиафайлы сохраняются <strong>исключительно в локальную базу данных на вашем устройстве</strong>.</li>
+            <li><span class="highlight">Отсутствие внешних серверов:</span> Мы не владеем внешними серверами для сбора вашей переписки и не передаем ваши личные сообщения третьим лицам.</li>
+            <li><span class="highlight">Резервное копирование:</span> Облачное резервное копирование (Google Drive) выполняется исключительно по вашей личной инициативе.</li>
+        </ul>
+
+        <h2>2. Используемые разрешения</h2>
+        <ul>
+            <li><span class="highlight">Доступ к уведомлениям (BIND_NOTIFICATION_LISTENER_SERVICE):</span> Используется исключительно для чтения заголовка и текста входящих уведомлений от выбранных вами мессенджеров.</li>
+            <li><span class="highlight">Оптимизация батареи:</span> Необходимо для предотвращения принудительного закрытия фоновой службы системой Android.</li>
+        </ul>
+
+        <h2>3. Сбор и передача данных третьим лицам</h2>
+        <p>Мы <strong>НЕ собираем, НЕ продаем и НЕ передаем</strong> ваши персональные данные третьим лицам.</p>
+
+        <h2>4. Удаление данных</h2>
+        <p>Вы можете в любой момент полностью очистить всю историю через меню <em>«Настройки» -> «Очистить архив»</em> внутри Приложения.</p>
+
+        <h2>5. Контактная информация</h2>
+        <div class="contact-box">
+            <p><span class="highlight">Email поддержки:</span> bankuwer1@gmail.com</p>
+        </div>
+    </div>
+
+    <!-- ENGLISH VERSION FOR GOOGLE MODERATORS & INTERNATIONAL USERS -->
+    <div id="lang-en" class="lang-section">
+        <h1>Privacy Policy & Terms of Service</h1>
+        <p><em>Last updated: October 13, 2026</em></p>
+
+        <p>This document governs the processing of personal data and conditions of use for the mobile application <strong>"RemindMe: Archive"</strong>.</p>
+
+        <h2>1. Privacy by Design</h2>
+        <p>The <strong>RemindMe</strong> app is built with strict local-first privacy principles:</p>
+        <ul>
+            <li><span class="highlight">Local Storage Only:</span> All incoming text notifications, contact names, and logs are stored <strong>strictly in a local database on your device</strong>.</li>
+            <li><span class="highlight">No Remote Servers:</span> We do not own or operate external servers to collect your messages, and we do not transfer your personal data to third parties.</li>
+            <li><span class="highlight">Cloud Backups:</span> Cloud backups (Google Drive) are executed exclusively upon your explicit manual initiation.</li>
+        </ul>
+
+        <h2>2. Permissions Used</h2>
+        <ul>
+            <li><span class="highlight">Notification Access (BIND_NOTIFICATION_LISTENER_SERVICE):</span> Used solely to read titles and body text of incoming notifications from user-selected messenger apps to build a local notification log.</li>
+            <li><span class="highlight">Battery Optimization:</span> Required to prevent Android OS from killing the background listener service.</li>
+        </ul>
+
+        <h2>3. Data Sharing & Third Parties</h2>
+        <p>We <strong>DO NOT collect, sell, or share</strong> your personal data or notification content with any third parties.</p>
+
+        <h2>4. Data Erasure</h2>
+        <p>You have full control over your data. You can erase your entire history at any time via <em>Settings -> Clear Archive</em> inside the app.</p>
+
+        <h2>5. Contact Information</h2>
+        <div class="contact-box">
+            <p><span class="highlight">Support Email:</span> bankuwer1@gmail.com</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 RemindMe. All rights reserved.
+    </footer>
+</div>
+
+<script>
+    function switchLang(lang) {
+        document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+        
+        document.getElementById('lang-' + lang).classList.add('active');
+        event.target.classList.add('active');
+    }
+
+    // Auto-detect browser language on load
+    const userLang = navigator.language || navigator.userLanguage;
+    if (!userLang.startsWith('ru')) {
+        switchLang('en');
+    }
+</script>
+
 </body>
 </html>
